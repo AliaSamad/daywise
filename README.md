@@ -182,7 +182,7 @@ cp .env.example .env.local
 | Variable | Where to find it | Notes |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SUPABASE_URL` | Project settings → API | e.g. `https://abcd.supabase.co` |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Project settings → API → `anon` key | safe to expose; RLS protects the data |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Connect → Framework → Next.js (or Project settings → API Keys) | `sb_publishable_…` key; the legacy `NEXT_PUBLIC_SUPABASE_ANON_KEY` (`eyJ…`) also works. Safe to expose; RLS protects the data |
 | `NEXT_PUBLIC_SITE_URL` | your app URL | used in confirmation and reset emails; defaults to `VERCEL_URL` or `http://localhost:3000` |
 
 No service-role key is needed — account deletion runs through a `security definer` function scoped to `auth.uid()`.

@@ -19,7 +19,7 @@ export default function SetupPage() {
           <ol className="list-decimal space-y-1 pl-5">
             <li>Create a project at supabase.com and run <code className="rounded bg-muted px-1">supabase/migrations</code>.</li>
             <li>Copy <code className="rounded bg-muted px-1">.env.example</code> to <code className="rounded bg-muted px-1">.env.local</code>.</li>
-            <li>Fill in <code className="rounded bg-muted px-1">NEXT_PUBLIC_SUPABASE_URL</code> and <code className="rounded bg-muted px-1">NEXT_PUBLIC_SUPABASE_ANON_KEY</code>.</li>
+            <li>Fill in <code className="rounded bg-muted px-1">NEXT_PUBLIC_SUPABASE_URL</code> and <code className="rounded bg-muted px-1">NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>.</li>
           </ol>
           <p>The README has the full walkthrough.</p>
         </CardContent>
